@@ -20,7 +20,7 @@ const TaskInput: React.FC = () => {
         text: task,
         isDone: false 
       };
-      dispatch(addTask(newTask));
+      dispatch(addTask(newTask) as any);
       setTask('');
       toast.success('Task added successfully');
     }
