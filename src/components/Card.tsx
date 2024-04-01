@@ -42,7 +42,7 @@ export function ComboboxDropdownMenu(props:any) {
   const [open, setOpen] = React.useState(false)
 
   return (
-    <div className="flex w-full flex-col items-start justify-between rounded-md border px-4 py-3  sm:items-center max-w-sm dark text-white mb-5">
+    <div className="flex w-full flex-row items-start justify-between rounded-md border px-4 py-3  sm:items-center max-w-sm dark text-white mb-5">
       <p className="text-sm font-medium leading-none dark ">
       
         <span className={ task.isDone?`line-through me-3`:`dark me-3`} >{task.text} </span> {task.isDone && <> (done)</>}
