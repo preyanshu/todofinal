@@ -29,7 +29,7 @@ const TaskInput: React.FC = () => {
 
   return (
     <div className='flex w-full h-40 items-end justify-center mb-5'>
-      <div className="flex w-full max-w-sm items-center space-x-2">
+      <div className="flex w-full max-w-sm items-center space-x-2 p-5">
         <Input className="text-white" type="text" placeholder="Task" value={task} onChange={(e) => setTask(e.target.value)}/>
         <Button type="button" onClick={handleAddTask}>Add</Button> {/* Make sure to specify type="button" */}
       </div>
